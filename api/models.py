@@ -15,6 +15,6 @@ class Rating(models.Model):
     class Meta:
         unique_together = (('user', 'movie'),)
         indexes = [
-    models.Index(fields=['user', 'movie'])
+        models.Index(fields=['user', 'movie'])
 ]
         # index_together = (('user, movie'),)  
